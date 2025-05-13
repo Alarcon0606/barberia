@@ -17,6 +17,12 @@
             color: white;
         }
 
+        @media (max-width: 768px) {
+            .dispositivo {
+                flex-direction: column;
+            }
+        }
+
         header {
             background-color: #111;
             display: flex;
@@ -94,7 +100,7 @@
         }
     </style>
 </head>
-<body>
+<body class="dispositivo">
     <header>
         <div class="logo">Alarcon's Barber</div>
         <nav>
@@ -110,12 +116,6 @@
     <section class="hero">
         <h1>Bienvenido a Alarcon's Barber<br>Tu estilo, nuestra pasión</h1>
     </section>
-
-    <section id="servicios" class="servicios">
-        <h2>Nuestros Servicios</h2>
-        <p>Cortes de cabello modernos, afeitado clásico y más.</p>
-    </section>
-
     <section id="contacto" class="contacto">
         <h2>Reserva tu Cita</h2>
         <a href="citas.html" class="btn">Agendar Ahora</a>

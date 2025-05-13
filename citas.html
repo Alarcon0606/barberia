@@ -21,6 +21,12 @@
             height: 100vh;
         }
 
+        @media (max-width: 768px) {
+            .dispositivo {
+                flex-direction: column;
+            }
+        }
+
         .cita-container {
             background: #111;
             padding: 30px;
@@ -68,7 +74,7 @@
         
     </style>
 </head>
-<body>
+<body class="dispositivo">
     <div class="cita-container">
         <h2>Reserva tu Cita</h2>
         <form>

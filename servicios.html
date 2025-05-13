@@ -8,6 +8,13 @@
                 background-color: #1a1a1a;
                 color: white;
             }
+
+            @media (max-width: 768px) {
+            .dispositivo {
+                flex-direction: column;
+            }
+        }
+
             header{
                 background-color:#111;
                 display: flex;
@@ -56,7 +63,7 @@
             }
         </style>
     </head>
-    <body>
+    <body class="dispositivo">
         <header>
             <div class="logo">Alarcon's Barber</div>
             <nav>

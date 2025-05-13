@@ -3,182 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Agendar Cita - Alarcon's Barber</title>
-    <style>
+    <title>Reservar Cita - Alarcón Barber</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ZDDrl3863wCVvCMky6_vCDZ4JxY3NpyuyUejhGr7zsCvZkh8eKv4WqmQ74aN_CkXY1siRWTFQLKrgrdgWJA3kfkmSKoV09k6AW0R6GA7pH-nOzQtt6YZ-s0MxKtO3-bizffcADnHRE5tEP_Yyg3__INtsTiCRU-FtGwR8f1Zz0_gNuwZrWYgn-N0brTY3EHFKMokqTx9D4jZ-UYSE_PkQBwmgUVWn3os89sP5wf5nj2VYQVGmccNx41kZXY2dCMPmYZfG4nMFcQxRuyFlzD2BGC3hqzTTaAZueDZRQpYLyml_AnF5MsT9b13A200AYVgssKgapJs3fI9svVVdlkk-0aRHwZRRinTnAqDki1ZKB7lwmVNVM42IU8pl9FOw5G-TBEflEuw81itXsme16GPNYW5q-swJf7zIsTSH2hAYZJ-uOWzDjL5FEJcldrmB9ekhW-hN2qj8FmZdJ8qyp6Cknw01qKfogNp48BINwILQ8qTKuvIMvQCHeHV5ApvSqDbIGnt2FfmijB3Je8bKeDTn8zGyhaTLKEnU2NZB-D7NwctcQN1RW2_NToId2PqWaaKRL4ls3r9CptUts61sCHH2QOVuQ357EIu5dhh-KwC9VCvtipYsa8cOTRxmwerDgbyAgOLQlaGv_t0RjIBetJwoB3Znvl1VX2kJtTxFqV90ufVR4-pgT98Q_p-OWfq-EURGDxffUgpr_t5xkxyvNrn35q2C84ulVCEr4NPrMvOOBBr0NmxfvyruQyKEJxAWGBmsyK-oZdQU7JFrmBYIJW_dqdpXnr2OCirIEUzLphBv2aT1K-Zu4orM4fqqky5KgSlK30kWpUr3lQvDZX-9MEMSKNrmG9LDnqMwo9n1lyX2_tqa9Iw9HpNm1XvoyHAGu-Wky71wPt9JNLy3lmj94hpBqtlq40fQ8iSrSqL-CeayRcacAWSI9iYxfBcNdKuqX0Y1WauYuESvjhsoML-Pef5O4Fn7SHy8NLDKxgc-JzDET6wBj6RUyNujMDZz_zqfTFQP-RlDuTNiXPJgzIgP-a-JpGt0X4QoLWgEAOIUFKvXIgJgBZvEDLjwcbYA-W14JT9M9O7Qw5MhblAAq4CnnCh8pBKXQpC-czqobtHb3-Ic-krRLHkbb36aQYNXnX0mjKhBj4Z0d06zc1OjroXhNGYBaiKwv2HFddLuWFVcXSVGoxype71Vj-Quh-jqyYcj-B38l6N8Oe8cNdZ2lzAufzSUnebmuN7wfZIQ6O_QpJIt-ygfCZGOWHhuPJnJHUw4Lf2uZKXXKChTtB5cFV5yD0BhBfwWbFZ41nZS662061yV63nJYMHBug-3oynl1-Xdm-jLI35TxCeGvaRX1GMM39YjUPll-GRxwzxltm0wX8fqlvwNVxCsiUCgCDyOchFSLdqctmF2ewpw3KYOmnOhSK56z-6yheOtRsfiRej5hbWlHloxgeCWlZMm1Itmrr75bAFrPd4zJ9k5i9qvShqBFJ7Q7T3Lwh3wgyLkmGB4tjGB0_gZ55uq3qm3XlkzYEui5pcTxGtSNiZL364kmISdHuAleRtWZr4O7n0QUhm9YsoG9GxWkWrFe4Yi06aLu-oE_gODhSwXMFGxtRN0lQVNpqO4RyJ8rKJyQ3o9L8FR4idqIWSY9NGxXDE86f-8u7uDe4I5vKGC30RRyAcvnMEjKGJYA" nonce="6b7a9a7e646d8b499908fac64808ae20" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9tYWlsLWF0dGFjaG1lbnQuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2F0dGFjaG1lbnQvdS8wLz91aT0yJmlrPWM5ZWZmMTY1ZmImYXR0aWQ9MC4yJnBlcm1tc2dpZD1tc2ctYTpyMTg3MzA1MjExNjIwOTY4NDc5NSZ0aD0xOTZjYjhkMjBlYTQzMWE1JnZpZXc9YXR0JmRpc3A9c2FmZSZyZWFsYXR0aWQ9Zl9tYW4weHcxbTAmencmc2FkZGJhdD1BTkdqZEotTnpQby1fOUtVUjcyMzVhZ0R1QW5YbFdVZmR0V3BLUVZOUkdxb0c3WEl5S2lqbWFGdXo2dkk2TU1JTWxaTzJlUGFmempwbmFDdk5aVWo2Y3hFZVBlUjZEaG95YlpndTVGaXFPeVJnNmRIdlN4cDBFaThBMjdHN2thcjIzREMwUlB6QUlTdm5GeU11T01pVTRaYmVzV0JMTFo2M2EyMk43VC1pNEpsN1pDa1NRREtTOW9kb2tRVWhwdF96TTNVVVJQNEZWajJEcktXc083eGpjY1N5V2dDNWhpemNTejZ6OWp3QlQxRUpEd2RRdUJPbnRTc191dzJCSlNPb1E1anlRVVoxVWhMRVM5dk4yU2JhcV9fRzJhYm5xVU9ITC1uLVhHTkJTczVWTjJFTHlSS0JMZ2pLWnhyNHdYLXRQcWx6cEZ3LXpyRHNVZXM2OGRid3pGOGdlREdvVzh2a0pJQ2pxNXFCVlJEUU5nMGRPNFpWa29sNlZmMS0xY0VBT0g1dFl3cDlTOFdETE5iZ3hnQjJBTDI1WnBHYlFiazJ5d1VEYjU1T1FPU0RoM1JhQzIzNTZoVUt3bE9DLWZsN1k0MU45eTJLcU9jbU96WDN0REd0WUZJUGhBSGMwSFV5QTB0TFlzUU1RdzVMZmp4MWRtWkFiemJLLXJOemJUQ2JtY01CNjRKeTZaS2Q0LVZuQmktQ21MZUFNaUV5QnN6UU9qUHRNU2pMTmlzaDA0eXJac21xTEt0X25wVThPMkhWTW1PZGdiTDhOMG9YbjlzdVpfWWlHS2tFblBUV0E0RjN0bVAxZktIZU05aGltRFR5TkszT0tIVTAyY09zWUdwbkY2ME9FWjBaSWd1eVYzRHNkV29QVVRTQ053WGxuX0RnVno5Ni1VUHIwMEtCWGw3REQzLTQ2SHBZaXJaSTRwelZGc0phbk5DYVF5ZnJicmt3RDBGcE5JdEVKWmZPbko4MHlremZMZm9EWmptWTB0Y1JRMWpFM0tWQzZVSUxBaG5ERGhUUVRaUGRjaWVaOXBPRFRndWh0azBlWm1vZlFaVmtYWjJaY2xqRFdXSDd4N0VhbE41Mk1HRmpnMmJuQUFqY29rRnNpQXBrWkR4cTdRMTQ3clk5SGVmcF8ydVg1TWZoM2V6ZVE3OWEtYTUtTE9jT0NPRU92bldTTW5IeElPb2F6U1ZjLVBVV2lMWUZUMXlHUUlCX2NjNllIaEx0S0xLME8ySDFsMFpQeExTbGtzMVVBeHRETzhZV1FISnZIanlIb2VlTDgycU5meHRvZEJXalJoUlFKVklfTEZKZDZ6WlFNNk9yMU5hR3VKQWplSnlfLUc3b2lsaE9mUmo2UVc4dVRLRGFrZVJwN2RLXzF4STQtMkQ"/><style>
         * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .cita-container {
+            background: #111;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
 
-header .logo h1 {
-    font-size: 24px;
-    font-weight: bold;
-}
+        h2 {
+            margin-bottom: 20px;
+        }
 
-header nav ul {
-    list-style-type: none;
-    display: flex;
-}
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
 
-header nav ul li {
-    margin-left: 20px;
-}
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: white;
+        }
 
-header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-}
+        button {
+            padding: 12px;
+            font-size: 16px;
+            background: #d19a66;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+        }
 
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-header .logo h1 {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.agendar-cita {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.agendar-cita h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.agendar-cita p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #555;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    font-size: 18px;
-    margin-bottom: 8px;
-    color: #333;
-}
-
-.form-group input,
-.form-group select {
-    width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.form-group input[type="date"],
-.form-group input[type="time"] {
-    width: 48%;
-    display: inline-block;
-    margin-right: 4%;
-}
-
-.form-group input[type="time"] {
-    margin-right: 0;
-}
-
-button.btn {
-    background-color: #333;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button.btn:hover {
-    background-color: #555;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 15px 20px;
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 16px;
-}
+        button:hover {
+            background: #b07a50;
+        }
+        
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Alarcon's Barber</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="horarios.html">Horarios</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="agendar-cita">
-        <h2>Agenda tu Cita</h2>
-        <p>Selecciona el servicio, fecha y hora para agendar tu cita con nosotros.</p>
-
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="nombre">Nombre Completo</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
-            </div>
-
-            <div class="form-group">
-                <label for="servicio">Servicio</label>
-                <select id="servicio" name="servicio" required>
-                    <option value="corte">Corte de Cabello</option>
-                    <option value="afeitado">Afeitado Clásico</option>
-                    <option value="barba">Barba y Bigote</option>
-                    <option value="peinado">Peinado</option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="fecha">Fecha</label>
-                <input type="date" id="fecha" name="fecha" required>
-            </div>
-
-            <div class="form-group">
-                <label for="hora">Hora</label>
-                <input type="time" id="hora" name="hora" required>
-            </div>
-
-            <button type="submit" class="btn"><a href="mailto:alarconsaezalejandro@gmail.com">Agendar Cita</a></button>
+    <div class="cita-container">
+        <h2>Reserva tu Cita</h2>
+        <form>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Correo Electrónico" required>
+            <input type="datetime-local" name="fecha" required>
+            <button type="submit"><a href="mailto:alarconsaezalejandro@gmail.com">Reservar Cita</a></button>
+            <button><a href="../Alarcon's Barber/index.html">Volver a inicio</a></button>
         </form>
-    </section>
+    </div>
 </body>
 </html>

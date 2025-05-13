@@ -3,169 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alarcon's Barber - Página de Inicio</title>
-    <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <title>Alarcon's Barber</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=JC8awFib-uGBuHPFsE9wGd1aTecYmChwm3tD9_5SKgdH7IYGvAMe0kyzcQSYOixYigZuraGqmSF_HGfZDwBPpJw0_jKnQhXGy4vBbjyr5shcxyQ16JzyexqjjudsPizFkQvdC30iCM-07bLFOsXbHveRddOaYuGSRqhdoOuPlBLCT8_phtGDyHGo013tAEzxkNSOnc6Ca0mM7Mdr9XfAraOy0rztUpTLb7lKugLkssp-NURnWRP9ln-QjQNisgbZtXmfTTCsVRVCPNQelhKfX0P-2ApxJx-xqI68yaaKnyLaSiWRHd7iKcUiJ5d9ZGDzecvYWZue1ldGY0F4vR-5-MYLz4xUifqI5BgAmqTamcnUn6PqcL2vgfNLEAFhrO5XYL__MstXSuD-4wTTUa9o3ZdWOGjdsgjU7SmvJHfgav7F531NV9ByuGiKQlnpl8hlA8KcfacatTaGQ1F_lCq-UXMFAF5RPCMwAWLd5Yk0qJGVP0B8wrTY-5IxF6rv8hW3zkxv8p18g2iYQ9dSdoo00XBjoQ-QSbTIzHBt8gWTImkgi-GX0Cem9kGhMezy5w4CiMm3xYOeXl0Efs2VXXyfyzRURp0xN0FOC46IrXAvJoM0rK2e0SL1V8ba3K5eC7kTlbN_6_Dje3aOQJZ5e7LXRmpaSnb1iBQHAFE3wJKm1M8RBEFy60MLo9spkga87rB6ETrbWixJHJYWQFj-r4aVAhTuRavxiNScIYyueaUdf7yaIgFrE9bgBSRkJAVcyWu2u-CaBe1XMpCKZeTjY5T4EiIkKBL2fqihqM0qY3XZ5wWtncdme1S0eNgmjTVOZ6ZFAZ1SnkNxx27JPsqW6dxPtDu1Z-N1-vlpdM3U7qrFvKDdFHPNnN5pkrUjb0tWwCJSplSD6bnrytugM9B9bTE-FtJ1k6i7R9GGVc-GW_iu2kuvsurWfZm7voFJDwoAXWMNbXPXGDs5mdhavCYAiBjKto5-mSfcnIKwNRE4TiO8yOB0sh1vz2GBDhRFJqfaiO3y1eRVeWu-J8j9yLSeKPExa1cxZs8H4VOn4oajS_xoy2DFZBoZtbOZSwoQ0MhuqMyACswSEygyYOLehH7Q1rNzF7EQuPA7ManBBVfskCQVrQBlNG7vpSJ4gXiPmulr_q5dOFWaNiEjiu4gAxRc-16uaJDrYiuQMzfPzHHViDpM7eg9fBH7bn759yn2zzclR-Qj_W6Ccmt-aoSOKWOIpSKYNy527GE8tQZHr3i7BTaI2c2IFOXyWXRbAUE3dJDBVhJZE1LtQ2QHJeW7mffVnv-fRbDVz1K5lxdxXn7CUwLkG1YBWKqbvZA3djXgC2nBlVSxZf4e47c4triFO9p2M7G5hZMWLUjCOLA_nCuUT2zQx4O5tSte5WKaHa0HOkKYf2ziukmcOf__8A-5Vjw5xqSHLzKdt_Z75A02dnuIAczJoy6taPlswHiXDACU3jJCvRdJpWkOUNGDqWwosJHzsshZqguI9Xes2qoSIlbf14CLT5InrkSu1ZeTzBzYKmpqKgm1Otd-KYvbtaNVpYXntA9lQYmwkQRoDMeKm4_kIdB9_rZ6Yj0z-4MB6YQABeLGDZrFqW-yu5PgaWahFsclOZbCdP_JKanHA8x0UCHT2jYYC8UqsUiYZLgeWMPIO_tV4a2IEE0BDSd5Nzx2ONWnhH4z0Q" nonce="bed8ce3f589a00caaa651dba3857619a" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9tYWlsLWF0dGFjaG1lbnQuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2F0dGFjaG1lbnQvdS8wLz91aT0yJmlrPWM5ZWZmMTY1ZmImYXR0aWQ9MC4zJnBlcm1tc2dpZD1tc2ctYTpyMTg3MzA1MjExNjIwOTY4NDc5NSZ0aD0xOTZjYjhkMjBlYTQzMWE1JnZpZXc9YXR0JmRpc3A9c2FmZSZyZWFsYXR0aWQ9Zl9tYW4weHcyZDMmencmc2FkZGJhdD1BTkdqZEotbWh5NWtUWFVRT2VYUGhZbE9yOXBBY2RWZHFYVVE3V3BrQlVKSVpTMnhIUEs2VEszLWFMaldHbnFwd3BWeWF2c1BUbXZ1RnBXSHh2dDZSUFV3NFdBNlZrY0RXNnczdDhFZzlVbHBfVHNYTVVDSjNEd21jeGZ0endoLXd6ajRTNG9HOEhLek8yVGZ3V2pwaERMVi1LbS14MDY4NWRXNUh0b3BVT2otTHU5dFNuOXI5bjBDN0VMVHh2ZTZuWWdURy1BbnUzQ3VBdGVVaUdIUU9PU3ZiZWFFZmJPemYtY1JnYWdrY01IUlZfbjM1ZENZV3g3bkc5Q051VDZmYXNBUlJ1ZXJvallmRUl6OVVZOFlPejBWQzNZbWhRNzVHWHF3R0lrSkpxbDJGNEpoYWpJWmRrLXNuZVVHNVZIdVR1aGtJMDBQb3FCTy1JeERiNXNyVjRfRVBFRUVYWGoyajhnZlI4amFIZ0xZaGFZWXlteGh0cVBQcWEzUmY3dThnYWVhRTVtMWR5a2NRaHFPRDktQ1pDQUFiQ1g5RDdNdWUxRThONC1kLTdpVWI3QVR1eC0tQUs3TzZXTTV5RzNvdVcyM2pnRmNaV0hGU0ctVF9fdjRyRXE1TGhXTTBOWHdBUFVnOW50UW5OVk9uX09aN2Q4WDBzRm9KQ01ZZG00Q2hBSl9hem5rbUpPcG02MTNhVHMwX2FXYmc3ZHo2bjRyY0hJZnZyS3ZIU2V2ZENIZWN4MDltdXkweXVncUNJaWVXY3hFa3I0NUIxS25DeGU4dzIzQ2RNbHBfMnJwbDBpcDNSN0I0RUdNWlBJZzR2Zm5HYnctSXl2LW5pMV9GN2lLZ0JweFRlRk44aTVLR0NmaGhTSjlKakFEMlcwS0FaMXRlOVdWRUVJdU0yWldyeUI0ZDZxcUtOUHpaY08zTEpxSTczd3BscUdoazBHVC11RUhxdVViQmM1SXFDVkM5TldEaWI4MU1JamJhWUtmcEdYczJ0UU1PNW1TMVdsX3dXY3d4TXktUEo3Q1RZN3hXQW1XSnFNY1dzbGcyWF9xNU9WT20tNFpWaFQzeW1aZmlPVjBpWjVtY01JUlRVREZBaFliUU1VYXFmTm1HV1BmR19zZDBLamg0ajVqNjEtenQ4ZnNldmNhOVJRZGhKUkdlcHRUSVZoTlFlb3V1OEZRQ05Udmg4QTd3STZxaUJZcndHYUZSOG5NWDNhSnlpNGhMTzJaSWoyX0o3c2xCOHhiRHoxVEFwanp5bHRGc1JTUWRicHJGQVNaLVY1ZnpOcWM5V25Wb1JGNWZMbk5POWZEVkZXeGVjWUI5WWNDM2tSRndtZ010RFpYcW91NEJHZkQxQktGNTEtTU55SGxjVllkWDM0bjAweDc"/><style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+        }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        header {
+            background-color: #111;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+        }
 
-header .logo h1 {
-    font-size: 36px;
-    font-weight: bold;
-}
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-header nav ul {
-    list-style-type: none;
-    display: flex;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
 
-header nav ul li {
-    margin-left: 20px;
-}
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
 
-header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-}
+        nav ul li a:hover {
+            background-color: #333;
+            border-radius: 5px;
+        }
 
-header nav ul li a:hover {
-    text-decoration: underline;
-}
+        .hero {
+            height: 80vh;
+            background: url('barberia.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
 
-.bienvenida {
-    background-color: #efefef;
-    text-align: center;
-    padding: 50px 20px;
-}
+        .hero h1 {
+            font-size: 48px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
 
-.bienvenida h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
+        .servicios {
+            text-align: center;
+            padding: 50px 20px;
+        }
 
-.bienvenida p {
-    font-size: 20px;
-    margin-bottom: 30px;
-}
+        .contacto {
+            text-align: center;
+            padding: 50px 20px;
+        }
 
-.bienvenida .btn {
-    background-color: #333;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    text-decoration: none;
-    display: inline-block;
-    transition: background-color 0.3s ease;
-}
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #d19a66;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
 
-.bienvenida .btn:hover {
-    background-color: #555;
-}
-
-.destacados {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.destacados h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.servicio {
-    background-color: #fff;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.servicio:hover {
-    transform: scale(1.05);
-}
-
-.servicio h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.servicio p {
-    font-size: 20px;
-    line-height: 1.6;
-    color: #555;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 15px 20px;
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 16px;
-}
+        .btn:hover {
+            background: #b07a50;
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Alarcon's Barber</h1>
-        </div>
+        <div class="logo">Alarcon's Barber</div>
         <nav>
             <ul>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="horarios.html">Horarios</a></li>
-                <li><a href="citas.html">Agendar Cita</a></li>
+                <li><a href="../Alarcon's Barber/index.html">Inicio</a></li>
+                <li><a href="../Alarcon's Barber/servicios.html">Servicios</a></li>
+                <li><a href="../Alarcon's Barber/contacto.html">Contacto</a></li>
+                <li><a href="../Alarcon's Barber/citas.html">Citas</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="bienvenida">
-        <h2>Bienvenidos a Alarcon's Barber</h2>
-        <p>Tu lugar de confianza para un corte de cabello, afeitado clásico y más. ¡Deja que nuestros expertos transformen tu look!</p>
-        <a href="citas.html" class="btn">Agenda tu cita ahora</a>
+    <section class="hero">
+        <h1>Bienvenido a Alarcon's Barber<br>Tu estilo, nuestra pasión</h1>
     </section>
 
-    <section class="destacados">
-        <h2>Servicios Destacados</h2>
-        <div class="servicio">
-            <h3>Corte de Cabello</h3>
-            <p>Ya sea un estilo clásico o moderno, tenemos el corte perfecto para ti.</p>
-        </div>
-        <div class="servicio">
-            <h3>Afeitado Clásico</h3>
-            <p>Un afeitado con navaja, suavidad garantizada.</p>
-        </div>
-        <div class="servicio">
-            <h3>Barba y Bigote</h3>
-            <p>El cuidado y modelado perfecto para tu barba y bigote.</p>
-        </div>
+    <section id="servicios" class="servicios">
+        <h2>Nuestros Servicios</h2>
+        <p>Cortes de cabello modernos, afeitado clásico y más.</p>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h2>Reserva tu Cita</h2>
+        <a href="../Pagina web barberia/citas.html" class="btn">Agendar Ahora</a>
     </section>
 </body>
 </html>
+

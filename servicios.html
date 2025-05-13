@@ -1,142 +1,192 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Servicios - Alarcon's Barber</title>
-    <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header .logo h1 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-header nav ul {
-    list-style-type: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin-left: 20px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-}
-
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-header .logo h1 {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.servicios {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.servicios h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-    color: #333;
-}
-
-.service {
-    background-color: #fff;
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.service:hover {
-    transform: scale(1.05);
-}
-
-.service h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.service p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #555;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 15px 20px;
-    margin-top: 40px;
-}
-
-footer p {
-    font-size: 16px;
-}
-    </style>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <h1>Alarcon's Barber</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="horarios.html">Horarios</a></li>
-                <li><a href="citas.html">Citas</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="servicios">
-        <h2>Servicios que Ofrecemos</h2>
-        <div class="service">
-            <h3>Corte de Cabello</h3>
-            <p>Ofrecemos cortes de cabello modernos y clásicos, adaptados a tus preferencias. Ya sea que prefieras un estilo casual o algo más elegante, nuestros barberos expertos están listos para darle forma a tu look.</p>
-        </div>
-        <div class="service">
-            <h3>Afeitado Clásico</h3>
-            <p>Relájate y disfruta de un afeitado clásico con navaja, utilizando productos de alta calidad para dejar tu piel suave y libre de irritaciones.</p>
-        </div>
-        <div class="service">
-            <h3>Barba y Bigote</h3>
-            <p>Nos especializamos en el cuidado de la barba. Desde recortes precisos hasta el afeitado de contornos, te ayudamos a darle forma y mantener tu barba impecable.</p>
-        </div>
-        <div class="service">
-            <h3>Peinado</h3>
-            <p>Completamos tu look con un buen peinado. Desde un estilo casual hasta el más elegante, siempre tenemos la opción perfecta para ti.</p>
-        </div>
-    </section>
-</body>
+<html>
+    <head>
+        <title>Servicios</title>
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=C0F-efN38Io3VF2TCvhKpDRzIZUl_nFg3rmZqrmMZYdKznRRMBz8IzItJbwxkXjNezZvnnHhketDCZrmR7vplK-SSGPYecbZyOtT4Sc0zSi4iNFNTGlYQZXrQkdi1lN99QAVICAvS-LWHDQrJW-MKYTXcWUjF9e5hwJqqhicitPKl-KVsUMlskio4OpuglzrP5l7jE620D9tDYfl4Bce9H7D05dCP2BTDJeMRoeIzxSuloJeEWmwQHsl-AQkpAtOdlhC2ihLhBSNKoHaXwZnHgLO4JxYNSJZaejpQ4wchfswqeGJwWnXGynx5Za0Do9EvOGmNOtJS0C8q5TMFxoFSi4e4Ijt54FGWVFCf4WOiN_PzSrqQZm6wpG9C8w-qeG_RRwYOUsa5rvhF2_KiP9vm27zkCg5MuEoHjhCYxnoyXppnYJyDCGnFB1fEAVgNEAsJ127NeZ0IUNxxnBCUkn1iRv1pBAaZRLU2sXh3IvWQCyDCyfvjuISWCQoUaVlJWvtEYJXlwaKagc7Xol_TjCOOQEBHjzVlaNz2YI5ODE6EZ_JNc_VNrXqGO14KDAKv3LN7oZ64zkxP8VTLNH8I3yYV-w8iRWLEYVmLAHBTp-pgn40xziuRvTC4BOoX9eyLEhGOz1ZSefcXBLbBzBg6amBUZRce5U8XMCF00I41kwQh658gPPVrru-MOTZuD_syFQ-VTb5vNygz2WgWAk3a9G2Fd2spfD09QNRmDsRTlOz60htKOo6L6UroiJ1qMon7HBbQW-L0Wdg5IlD6p4had_-9C6ll796Sc5b0kzo8oc7gc0JhHZysaJyKeR_jUNpW3uz12BV0iGEHRuy6sGlxNp-8xXokEDt7DDbuylt4E8K9d-aKxTo_RZp7AOAtCAdfBjI9Perq3vyswKgcBTPb1AJCGQZ7327E-ic6zgN5S3PnVI8MWOcCjpMvMSa9HflMjuR9t2w-FcfBiFXt7uMwS0jjYp4rxv8aX7dlN8yl99DUNQuDJIkcRLoqiYA-dFT0wqCZzOdurHnQWlf8ufkPaZTGcIzS-8r_i1Jmr6Dt0WNXqLsrZI7WhlylH-WOyfKvO5gsFzgZJiOXbzuV_K2WZCRs-rfRrkCqzjDX0CTPQ9wcsV3z3QXtTR4eGliSOXQltl-wNUZIgxmnnCwbDTodG-60J6iknz_eTik8vKcZ_0L99NBpWYamjr6F1neiJ4FW_QqjK4kuuMXbRF5FWBOS-1PVeGQ38Uzatf2b_tcvuZllKFQo0WfB-6mciDZ3hY4KhEyQchi7E0Sa_-S67uojfuVlKYKumkxEg5JpdjC2wC4B4Ym--6teuU_10YkLGIWC90spRF5dxk5kt7tCxWAv8lHAVUp4CP0-xuf91uD6cR3gyzpm1hmhqOh583eT0eORbRwGKGkEDYFBeTx-P1r7VIBo0zkJ7hZTKEpeaKV6jzE68hhhRzdNUuvjxeqfx5XC85VxrI9hhkXK7CE8tKEkWpGgxucdjh1zo9RczrXHOklOhxIfCioQOV9ZVKm6mFWyT_O9eY_VpH6Z8lcwqjN87w3-5bto4fPZWyA3d_fBHc9PyfmmzT2l0yMXSz9B8NoDQmJv2thlRehfd2iWnw090mlcR-JmszL3Mcqbv0vJdVAvSXV28AZMPSPcelJHimJbzsudviTtMfxag85SW9zJfdVDg" nonce="e8f15e46a79d6ac750924d04ea4ba34f" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9tYWlsLWF0dGFjaG1lbnQuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2F0dGFjaG1lbnQvdS8wLz91aT0yJmlrPWM5ZWZmMTY1ZmImYXR0aWQ9MC42JnBlcm1tc2dpZD1tc2ctYTpyMTg3MzA1MjExNjIwOTY4NDc5NSZ0aD0xOTZjYjhkMjBlYTQzMWE1JnZpZXc9YXR0JmRpc3A9c2FmZSZyZWFsYXR0aWQ9Zl9tYW4weHcydzUmencmc2FkZGJhdD1BTkdqZEoteTA3cG1WVXpwOWgtZlBsX2VPSGFQeXA2UFZpRXhGeUVBdzhhX0NXeXdJYlFTM2ViMnZCTkFFYnRrdENQNDIxQkJhNGxuSWYyeTh4cHZXbmVCTDdaM3dDWWg2YkpJMHoxSjl6SENtak5SaHFoTlN6ZTVWUXhMWlcxMm5YRHlsYm1aRjBabmFOUEVLczM2UGtnc2NIMTdiaVFwdmgzT1dJOHpMWDV1VkpTMlNPY1Z3eDA3a2lQSlNTaS1PX0dZOElTYmNKaG5XUWRzUVpqWkZ0RHlkZGZ0VjhPNEwwemdQMEJPaUtmY254X2RtVTQ5ZEVZVHM0dTA5Zlo5RmxqYWRZbmNnUGNDdkhVS0pmU1lTUnlaTlVLV2R0blp6dHQ2a29pQnNybTRHT3QxYzlCNlZZX003cFFja04wUnRqZTdIc0dBQzl0dmVhcUF4aWtWYUFTZ3VkcGRLcjlpVmJnWmZ4UVJKdWhqQi1meDdCNERIQVIwU1BCdEhnajlEc3RncGRLalBFeFVoU1RjSlVOQVhHWUswcnFlYzNiVzFSU25mZVgyZV9xc21MLWdKc2NXVVdIUG5nMzBZRlB2b3RoWHdLbmlGcGM4ZkN2d2VlUTZoNXVjRjhnMlRwRno5U3EybjRnV050QmRoN25zbWo2dTZSMVowTEpacjJ4NEhrUXp6QWU0WlZNanpSbXBKM21wZU0yaERZSlVJLWxGTlB2clhpX1F6QzloX3p6R3d6VVJsWUNIWVJRaW5MVEpzZldtQkRQNUxTU3dNLS10MWpRRjNaRzNMLUhqYV9QYXFPRnhkem5tYzZyYzc2T25mX2Q5VUk5OWJMR1BLcW1pX19iVXlfem9PQnVqbzJYbVFwdG9XWkZIeFdqRW5QempGaVdSQm1tbFVxSV9ibGNHR2dXUms4eDUyMGlMeUp4ekgtSGFqN2xrcVQ1VUxaUGV4cmRsYldjalRLSVRkV0xJSlhyTnRWVWt6YThEMjlyZE1RYk9HbDFLZ2kyZjJ4b3NxeXpRQVVhOXNvRmItTzNDTTdMMzhxcWNxdDI5MUN5UHk1a1FhRTlSYUJUUGRNZzEyQkl1eWFYN1o2djQ0dGhsbGlGUkJHc2lvSmZua2toaVZOdkpkRWJud2szcGg1eTlLcUtLME01UHNCR0w2MmhRU0xOQXNTYnM0UTNBb3p6VmhuUmhjS0d2MTljWm8xZUYwcGJNV2Zzek10Q0puMjNKY21Pd2pUUUhrRUQ2ckM0MG1UT1JRWE1WbVpCd2l3MWMwTURweERCMlZzbGptRjBUcUYtR0RTZXZuVEFRWXpablNHeG9jQ3RBcVBYd3B1NEhSZXV4WGNKSEpnajRmcUoxU0pTME9yTmVlN0dkaXRUSk5SN20"/><style>
+            body{
+                font-family: Arial, sans-serif;
+                background-color: #1a1a1a;
+                color: white;
+            }
+            header{
+                background-color:#111;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 30px;
+                box-shadow: 0 2px 5px rgba(255,255,255,0.1);
+            }
+            .logo{
+                font-size: 24px;
+                font-weight: bold;
+            }
+            nav ul{
+                list-style: none;
+                display: flex;
+                gap: 20px;
+            }
+            nav ul li{
+                display: inline;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color:white;
+                font-size: 18px;
+                padding: 5px 10px;
+                transition: 0.3s;
+            }
+            nav ul li a:hover{
+                background-color: #333;
+                border-radius: 5px;
+            }
+            h1{
+                text-align: center;
+            }
+            table {
+                border-collapse: collapse;
+                border: 1px solid white;
+                width: 100%;
+            }
+            table, th, td, tr {
+                border: 1px solid white;
+                width: 150px;
+                height: 50px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">Alarcon's Barber</div>
+            <nav>
+                <ul>
+                    <li><a href="../Alarcon's Barber/index.html">Inicio</a></li>
+                    <li><a href="../Alarcon's Barber/servicios.html">Servicios</a></li>
+                    <li><a href="../Alarcon's Barber/contacto.html">Contacto</a></li>
+                    <li><a href="../Alarcon's Barber/citas.html">Citas</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Servicios</h1>
+        <h2>Disponemos de distintos servicios que se mostrarán a continuación con sus respectivos precios:</h2>
+        <table>
+            <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Corte degradado conafeitadora o navaja</td>
+                <td>12,00€</td>
+            </tr>
+            <tr>
+                <td>Corte + barba</td>
+                <td>15,00€</td>
+            </tr>
+            <tr>
+                <td>Corte niño (0-10)</td>
+                <td>11,00€</td>
+            </tr>
+        </table>
+        <h2>Otros servicios</h2>
+        <table>
+            <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Arreglo y perfilado de cejas</td>
+                <td>3,00€</td>
+            </tr>
+            <tr>
+                <td>Arreglo de barba</td>
+                <td>6,00€</td>
+            </tr>
+            <tr>
+                <td>Carte clásico a tijera</td>
+                <td>15,00€</td>
+            </tr>
+        </table>
+        <h2>Packs</h2>
+        <table>
+            <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Corte + peinado</td>
+                <td>13,00€</td>
+            </tr>
+            <tr>
+                <td>Corte + peinado + lavado</td>
+                <td>16,00€</td>
+            </tr>
+            <tr>
+                <td>Corte + barba</td>
+                <td>15,00€</td>
+            </tr>
+            <tr>
+                <td>Corte + lavado</td>
+                <td>14,00€</td>
+            </tr>
+            <tr>
+                <td>Tratamiento facial</td>
+                <td>20,00€</td>
+            </tr>
+        </table>
+        <h2>Servicios de corte</h2>
+        <table>
+            <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Corte jubilado</td>
+                <td>11,00€</td>
+            </tr>
+            <tr>
+                <td>Corte degradado con navaja o cuchilla</td>
+                <td>12,00€</td>
+            </tr>
+            <tr>
+                <td>Corte premium</td>
+                <td>20,00€</td>
+            </tr>
+            <td>Corte clásico sin degradar</td>
+            <td>11,00€</td>
+        </table>
+        <h2>Servicios de corte para niños</h2>
+        <table>
+            <tr>
+                <th>servicio</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Corte niño (0-10)</td>
+                <td>11,00€</td>
+            </tr>
+            <tr>
+                <td>Corte niño (0-10) degradado</td>
+                <td>12,00€</td>
+            </tr>
+        </table>
+        <h2>Decoloración</h2>
+        <table>
+            <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Decoloración desde </td>
+                <td>30,00€</td>
+            </tr>
+            <tr>
+                <td>Color fantasia desde </td>
+                <td>30,00€</td>
+            </tr>
+            <tr>
+                <td>Mechas desde </td>
+                <td>20,00€</td>
+            </tr>
+        </table>
+    </body>
 </html>
